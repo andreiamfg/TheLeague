@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" android:background="#09C"
+    android:id="@+id/refresh_widget"
+    >
+
+    <include layout="@layout/layout_profile_info"
+        android:id="@+id/the_league_widget_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

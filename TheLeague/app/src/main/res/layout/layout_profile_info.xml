@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/the_league_bg_dark">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/the_league_lightGrey_dark"
+        android:id="@+id/profile_summoner_icon"
+        android:contentDescription="summoner_icon_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/profile_summoner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="SummonerName"
+        android:textColor="@color/the_league_lightGrey_light"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/profile_summoner_icon"
+        android:layout_toEndOf="@+id/profile_summoner_icon" />
+
+    <TextView
+        android:id="@+id/profile_summoner_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textAllCaps="true"
+        android:text="Level 1"
+        android:textColor="@color/the_league_green"
+        android:textSize="18dp"
+        android:layout_below="@+id/profile_summoner_name"
+        android:layout_toEndOf="@+id/profile_summoner_icon" />
+
+    <TextView
+        android:id="@+id/profile_wins_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wins"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:textColor="@color/the_league_green"
+        android:layout_below="@id/profile_summoner_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/profile_wins_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="@color/the_league_lightGrey_light"
+        android:textStyle="bold"
+        android:layout_below="@id/profile_wins_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/profile_kills_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kills"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:textColor="@color/the_league_green"
+        android:layout_below="@id/profile_summoner_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:paddingLeft="20dp"
+        android:textAlignment="gravity"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:id="@+id/profile_kills_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="@color/the_league_lightGrey_light"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/profile_wins_counter"
+        android:layout_alignLeft="@+id/profile_kills_label"
+        android:layout_alignRight="@+id/profile_kills_label"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/profile_assists_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assists"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:textColor="@color/the_league_green"
+        android:layout_below="@id/profile_summoner_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/profile_assists_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="@color/the_league_lightGrey_light"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/profile_wins_counter"
+        android:layout_alignLeft="@+id/profile_assists_label"
+        android:layout_alignRight="@+id/profile_assists_label"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>

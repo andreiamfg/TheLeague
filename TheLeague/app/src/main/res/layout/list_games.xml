@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:background="@drawable/the_league_bg_dark"
+    android:focusable="false"
+    android:clickable="false"
+    android:focusableInTouchMode="false">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/the_league_lightGrey_dark"
+        android:id="@+id/imageView_champ"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="false"
+        android:clickable="false"/>
+
+
+    <TextView
+        android:id="@+id/textView_win_lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textAllCaps="true"
+        android:text="OUTCOME"
+        android:textColor="@color/the_league_lightGrey_light"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_alignTop="@+id/imageView_champ"
+        android:layout_toEndOf="@+id/imageView_champ"
+        android:focusable="false"
+        android:enabled="false"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/textView_game_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Match Type"
+        android:textColor="@color/the_league_lightGrey_dark"
+        android:textSize="16dp"
+        android:layout_below="@+id/textView_win_lose"
+        android:layout_toEndOf="@+id/imageView_champ"
+        android:focusable="false"
+        android:enabled="false"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/textView_champion_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textAllCaps="true"
+        android:text="Champion Name"
+        android:textStyle="bold"
+        android:textColor="@color/the_league_green"
+        android:textSize="24dp"
+        android:layout_alignBottom="@+id/imageView_champ"
+        android:layout_toEndOf="@+id/imageView_champ"
+        android:focusable="false"
+        android:enabled="false"
+        android:clickable="false"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/the_league_separator"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/textView_champion_name"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

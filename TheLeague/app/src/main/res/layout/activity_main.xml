@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/the_league_bg_dark">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/summoner_input_field"
+        android:hint="Summoner name"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/the_league_lightGrey_light"
+        android:textColorHint="@color/the_league_lightGrey_dark"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/main_page_logo"
+        android:layout_alignStart="@+id/main_page_logo"
+        android:backgroundTint="@color/the_league_green" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/summoner_search_btn"
+        android:onClick="onSearch"
+        android:background="@drawable/the_league_button_green"
+        android:layout_below="@+id/summoner_input_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/riot_api_logo_image_view"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/riot_api_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/main_page_logo"
+        android:src="@drawable/leaguelogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/riot_api_logo_image_view"
+        android:layout_alignStart="@+id/summoner_search_btn"
+        android:layout_alignBottom="@+id/riot_api_logo_image_view"
+        android:layout_alignEnd="@+id/riot_api_logo_image_view" />
+
+
+</RelativeLayout>

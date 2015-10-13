@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vfs.theleague.ProfileActivity"
+    android:background="@drawable/the_league_bg_light"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/activity_profile_info">
+
+        <include layout="@layout/layout_profile_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/activity_profile_info"
+        android:id="@+id/activity_profile_bottom"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/activity_profile_logo"
+            android:src="@drawable/league_mini_logo"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match History"
+            android:textAllCaps="true"
+            android:id="@+id/activity_profile_gamelist_btn"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/the_league_button_green"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            android:onClick="onMatchHistoryCLick"/>
+
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/riot_api_logo_image_view"
+            android:layout_alignStart="@+id/summoner_search_btn"
+            android:layout_alignBottom="@+id/riot_api_logo_image_view"
+            android:layout_alignEnd="@+id/riot_api_logo_image_view"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</RelativeLayout>
